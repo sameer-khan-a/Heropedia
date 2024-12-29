@@ -1,0 +1,30 @@
+#nav {
+    background-color: #3836FD;
+}
+#brand {
+    color: #F2F4E5;
+    font-weight: 400;
+    font-style: italic;
+}
+ul > li {
+    color: #F2F4E5;
+
+    list-style: none;
+}
+form {
+    height: 20vh;
+}
+.nav-list {
+    margin-right: 50px;
+}
+body {
+
+    background-color: darkgoldenrod;
+}
+#content {
+    color: red;
+}
+* {
+    color: red;
+    font-family: "Libre Baskerville", serif;
+}
