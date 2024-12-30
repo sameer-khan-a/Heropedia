@@ -35,20 +35,22 @@
           </div>
         <% } else { %>
           <div class="superhero-details container d-flex align-items-center justify-content-center h-100 gap-3">
-            <img src="<%= content.image.url %>" alt="<%= content.name %>" class="cols-6" height="400px" width="300px" >
+            <img src="<%= content.image.url %>" alt="<%= content.name %>" class="cols-6 img-circle" height="400px" width="300px" >
             <ul class="cols-6" id="content">
-              <li>Name: <%= content.name %></li>
-              <li>Gender: <%= content.appearance.gender %></li>
-              <li>Alignment: <%= content.biography.alignment %></li>
-              <li>Occupation: <%= content.work.occupation %></li>
-              <li>Relatives: <%= content.connections.relatives || 'N/A' %></li>
-              <li>Aliases:</li>
-              <% content.biography.aliases.forEach(alias => { %>
+              <li><span class="content-title">Name:</span> <%= content.name %></li>
+              <li><span class="content-title">Gender:</span> <%= content.appearance.gender %></li>
+              <li><span class="content-title">Alignment:</span> <%= content.biography.alignment %></li>
+              <li><span class="content-title">Occupation:</span> <%= content.work.occupation %></li>
+              <li><span class="content-title">Relatives:</span> <%= content.connections.relatives || 'N/A' %></li>
+              <li><span class="content-title">Aliases:</span><ul>  
+                <% content.biography.aliases.forEach(alias => { %>
                 <li><%= alias %></li>
-              <% }); %>
-              <li>Intelligence: <%= content.powerstats.intelligence %></li>
-              <li>Strength: <%= content.powerstats.strength %></li>
-              <li>Speed: <%= content.powerstats.speed %></li>
+                <% }); %>
+            </ul></li>
+             
+              <li><span class="content-title">Intelligence:</span> <%= content.powerstats.intelligence %></li>
+              <li><span class="content-title">Strength:</span> <%= content.powerstats.strength %></li>
+              <li><span class="content-title">Speed:</span> <%= content.powerstats.speed %></li>
             </ul>
           </div>
         <% } %>

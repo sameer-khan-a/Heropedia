@@ -1,14 +1,21 @@
 #nav {
-    background-color: #3836FD;
+    background-color: #36353d;
 }
 #brand {
-    color: #F2F4E5;
+    color: #fdb300;
     font-weight: 400;
     font-style: italic;
 }
+img {
+    border-radius: 50px;
+}
 ul > li {
     color: #F2F4E5;
-
+}
+ul > li::marker {
+    color: #fdb300;
+}
+#nav > ul > li {
     list-style: none;
 }
 form {
@@ -16,10 +23,11 @@ form {
 }
 .nav-list {
     margin-right: 50px;
+    list-style: none;
 }
 body {
 
-    background-color: darkgoldenrod;
+    background-color: #a72734;
 }
 #content {
     color: red;
@@ -27,4 +35,11 @@ body {
 * {
     color: red;
     font-family: "Libre Baskerville", serif;
+}
+.content-title {
+    font-weight: bold;
+    color: #fdb300;
+}
+#nav a  {
+    color: #fdb300;
 }
