@@ -32,6 +32,9 @@ body {
 #content {
     color: red;
 }
+h1 {
+    color: #fdb300;
+}
 * {
     color: red;
     font-family: "Libre Baskerville", serif;
