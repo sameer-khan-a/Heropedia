@@ -7,7 +7,21 @@
     font-style: italic;
 }
 img {
+    max-width: 450px;
+    max-height: 350px;
     border-radius: 50px;
+}
+h1 {
+    color: #fdb300;
+}
+p {
+    color: #F2F4E5;
+}
+.about {
+    margin-top: 50px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
 }
 ul > li {
     color: #F2F4E5;

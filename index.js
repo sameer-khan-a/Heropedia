@@ -13,6 +13,9 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('index.ejs');
 })
+app.get('/about', (req, res) => {
+    res.render('about.ejs');
+})
 app.post('/', async (req, res) => {
     var response = await axios.get(apiUrl + `/search/${req.body.name}`);
     console.log(response.data.response);
