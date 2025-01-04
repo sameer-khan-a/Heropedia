@@ -10,16 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeroPedia</title>
 </head>
-<body class="container">
-    <nav class="navbar container" id="nav">
-        <div class="container">
+<body>
+    <nav class="navbar" id="nav">
+        <div class="container-fluid">
           <a class="navbar-brand" id="brand" href="#">
             <img src="/images/logo.png" alt="Logo" width="55" height="54" class="d-inline-block align-text-center" >
             <h4 class="d-inline">HeroPedia</h4>
           </a>
-          <ul class="d-flex flex-row gap-5 nav-list mt-2">
-            <li><a class="list-group-item" href="/">Home</a></li>
-            <li><a class="list-group-item" href="/about">About Us</a></li>
+          <ul class="container d-flex flex-row gap-5 nav-list mt-2">
+            <li><a class="container list-group-item" href="/">Home</a></li>
+            <li><a class="container list-group-item" href="/about">About Us</a></li>
           </ul>
         </div>
       </nav>
@@ -34,9 +34,9 @@
             <h1><%= content.msg %></h1>
           </div>
         <% } else { %>
-          <div class="superhero-details container d-flex flex-wrap align-items-center justify-content-center h-100 gap-3">
-            <img src="<%= content.image.url %>" alt="<%= content.name %>" class="cols-6 img-circle" >
-            <ul class="cols-6 col-sm-8 container" id="content">
+          <div class="superhero-details container d-flex align-items-center justify-content-center h-100 gap-3">
+            <img src="<%= content.image.url %>" alt="<%= content.name %>" class="cols-6 img-circle" height="400px" width="300px" >
+            <ul class="cols-6" id="content">
               <li><span class="content-title">Name:</span> <%= content.name %></li>
               <li><span class="content-title">Gender:</span> <%= content.appearance.gender %></li>
               <li><span class="content-title">Alignment:</span> <%= content.biography.alignment %></li>
@@ -48,9 +48,9 @@
                 <% }); %>
             </ul></li>
              
-              <li><span class="content-title">Intelligence:</span> <%= content.powerstats.intelligence %></li>
-              <li><span class="content-title">Strength:</span> <%= content.powerstats.strength %></li>
-              <li><span class="content-title">Speed:</span> <%= content.powerstats.speed %></li>
+              <li><span class="container content-title">Intelligence:</span> <%= content.powerstats.intelligence %></li>
+              <li><span class="container content-title">Strength:</span> <%= content.powerstats.strength %></li>
+              <li><span class="container content-title">Speed:</span> <%= content.powerstats.speed %></li>
             </ul>
           </div>
         <% } %>
