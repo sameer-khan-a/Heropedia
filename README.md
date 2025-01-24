@@ -9,13 +9,13 @@ Heropedia is an engaging and interactive website designed to provide information
 
 ## Screenshots
 ### Homepage
-![Homepage](public/homepage.png)
+![Homepage](public/images/homepage.png)
 
 ### Character Profile
-![Character Profile](public/character_profil.png)
+![Character Profile](public/images/character_profil.png)
 
 ### Search Page
-![Search Page](public/about.png)
+![Search Page](public/images/about.png)
 
 ## How to Run
 1. Clone the repository:
