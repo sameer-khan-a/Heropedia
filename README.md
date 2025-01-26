@@ -14,7 +14,7 @@ Heropedia is an engaging and interactive website designed to provide information
 ### Character Profile
 ![Character Profile](public/images/character_profile.png)
 
-### Search Page
+### About Page
 ![Search Page](public/images/about.png)
 
 ## How to Run
