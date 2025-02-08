@@ -28,6 +28,7 @@ app.post('/', async (req, res) => {
                 // res.json(response.data);
                 content = response.data; 
                 console.log(content)
+                console.log(content.image.url)
                 res.render('index.ejs', {content});
     }
     // res.render('index.js', {content});
