@@ -26,7 +26,8 @@ app.post('/', async (req, res) => {
                 console.log(response.data.results[response.data.results.length-1].id);
                 response = await axios.get(apiUrl + `/${response.data.results[response.data.results.length-1].id}`);
                 // res.json(response.data);
-                content = response.data;
+                content = response.data; 
+                print(content)
                 res.render('index.ejs', {content});
     }
     // res.render('index.js', {content});
