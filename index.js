@@ -32,30 +32,7 @@ app.post('/', async (req, res) => {
     }
     // res.render('index.js', {content});
 })
-app.post('/powerstats/:id', async (req, res) => {
-    var response = await axios.get(apiUrl + `/${req.params.id}`);
-    res.json(response.data.powerstats);
-    content = response.data;
-    res.json(content);
-    res.render('index.js', {content});
-    // res.render('index.js', {content});
-})
-app.post('/biography/:id', async (req, res) => {
-    var response = await axios.get(apiUrl + `/${req.params.id}`);
-    res.json(response.data.biography);
-    content = response.data;
-    res.json(content);
-    res.render('index.js', {content});
-    // res.render('index.js', {content});
-})
-app.post('/appearance/:id', async (req, res) => {
-    var response = await axios.get(apiUrl + `/${req.params.id}`);
-    res.json(response.data.appearance);
-    content = response.data;
-    res.json(content);
-    res.render('index.js', {content});
-    // res.render('index.js', {content});
-})
+
 app.listen(port, () => {
     console.log(`app listening on ${port}`);
 })
